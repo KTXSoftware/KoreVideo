@@ -1,0 +1,4 @@
+[submodule "theora"]
+	path = theora
+	url = https://git.ktxsoftware.com/git/Externals/theora.git
+	branch = master
