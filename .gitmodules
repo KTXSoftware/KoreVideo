@@ -2,3 +2,11 @@
 	path = theora
 	url = https://git.ktxsoftware.com/git/Externals/theora.git
 	branch = master
+[submodule "vorbis"]
+	path = vorbis
+	url = https://git.ktxsoftware.com/git/Externals/vorbis.git
+	branch = master
+[submodule "ogg"]
+	path = ogg
+	url = https://git.ktxsoftware.com/git/Externals/ogg.git
+	branch = master
