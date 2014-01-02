@@ -1,12 +1,12 @@
 [submodule "theora"]
 	path = theora
-	url = ../theora.git
+	url = ../theora
 	branch = master
 [submodule "vorbis"]
 	path = vorbis
-	url = ../vorbis.git
+	url = ../vorbis
 	branch = master
 [submodule "ogg"]
 	path = ogg
-	url = ../ogg.git
+	url = ../ogg
 	branch = master
