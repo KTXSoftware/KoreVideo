@@ -1,7 +1,9 @@
-#include <Kore/Graphics/Image.h>
+#include <Kore/Graphics/Texture.h>
 #include <Kore/IO/FileReader.h>
 #include <theora/theoradec.h>
 #include <vorbis/codec.h>
+
+class TheoraVideoClip;
 
 namespace Kore {
 	class Video {
@@ -12,12 +14,18 @@ namespace Kore {
 		void pause();
 		int width();
 		int height();
-		Image* currentImage();
+		Texture* currentImage();
 		double duration; //milliseconds
 		double position; //milliseconds
 		bool finished;
 		bool paused;
 		void update(double time);
+
+	private:
+		TheoraVideoClip* clip;
+		Texture* image;
+		double lastTime;
+
 	private:
 		void video_write();
 		int queue_page(ogg_page* page);
