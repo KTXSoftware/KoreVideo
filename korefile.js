@@ -21,14 +21,14 @@ project.addExclude("vorbis/lib/misc.c");
 project.addExclude("vorbis/lib/psytune.c");
 project.addExclude("vorbis/lib/tone.c");
 
-project.addFile('theoraplayer/**');
-project.addExclude('theoraplayer/src/YUV/libyuv/src/row_x86.asm');
-project.addExclude('theoraplayer/src/YUV/libyuv/src/x86inc.asm');
+project.addFile('libtheoraplayer/**');
+project.addExclude('libtheoraplayer/src/YUV/libyuv/src/row_x86.asm');
+project.addExclude('libtheoraplayer/src/YUV/libyuv/src/x86inc.asm');
 
-project.addIncludeDir('theoraplayer/src/YUV');
-project.addIncludeDir('theoraplayer/src/YUV/libyuv/include');
-project.addIncludeDir('theoraplayer/include/theoraplayer');
-project.addIncludeDir('theoraplayer/src/Theora');
+project.addIncludeDir('libtheoraplayer/src/YUV');
+project.addIncludeDir('libtheoraplayer/src/YUV/libyuv/include');
+project.addIncludeDir('libtheoraplayer/include/theoraplayer');
+project.addIncludeDir('libtheoraplayer/src/Theora');
 
 project.addDefine('LIBYUV_DISABLE_X86');
 project.addDefine('LIBYUV_DISABLE_NEON');
