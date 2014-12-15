@@ -10,3 +10,7 @@
 	path = ogg
 	url = ../ogg
 	branch = master
+[submodule "libtheoraplayer"]
+	path = libtheoraplayer
+	url = ../libtheoraplayer
+	branch = master
