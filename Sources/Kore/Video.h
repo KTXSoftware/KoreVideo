@@ -51,10 +51,10 @@ namespace Kore {
 		int videobuf_ready;
 		ogg_int64_t  videobuf_granulepos;
 		double       videobuf_time;
-		int          audiobuf_fill = 0;
-		int          audiobuf_ready = 0;
+		int          audiobuf_fill;
+		int          audiobuf_ready;
 		ogg_int16_t *audiobuf;
-		ogg_int64_t  audiobuf_granulepos = 0;
+		ogg_int64_t  audiobuf_granulepos;
 		int pp_level_max;
 		int pp_level;
 		int pp_inc;

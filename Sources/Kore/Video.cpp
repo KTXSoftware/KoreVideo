@@ -54,7 +54,7 @@ namespace {
 
 const char* iphonegetresourcepath();
 
-Video::Video(const char* filename) {
+Video::Video(const char* filename) : audiobuf_fill(0), audiobuf_ready(0), audiobuf_granulepos(0) {
 	if (theora == nullptr) {
 		theora = new TheoraVideoManager();
 		theora->setAudioInterfaceFactory(new KoreAudioInterfaceFactory());
