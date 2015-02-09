@@ -42,4 +42,8 @@ project.addDefine('_LIB');
 project.addDefine('_YUV_C');
 project.addDefine('__THEORA');
 
+if (platform === Platform.Linux) {
+	project.addDefine('_LINUX');
+}
+
 return project;
