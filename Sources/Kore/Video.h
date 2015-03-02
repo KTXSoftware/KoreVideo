@@ -12,6 +12,7 @@ namespace Kore {
 		~Video();
 		void play();
 		void pause();
+		void stop();
 		int width();
 		int height();
 		Texture* currentImage();

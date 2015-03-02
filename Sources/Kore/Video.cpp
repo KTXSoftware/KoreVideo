@@ -87,6 +87,10 @@ void Video::pause() {
 	clip->pause();
 }
 
+void Video::stop() {
+	clip->stop();
+}
+
 void Video::update(double time) {
 	
 }
